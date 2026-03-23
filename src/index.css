@@ -118,3 +118,7 @@ select > option {
   background-color: #111;
   color: white;
 }
+
+li {
+  list-style: none;
+}
