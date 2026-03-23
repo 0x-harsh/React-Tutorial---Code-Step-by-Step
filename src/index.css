@@ -99,3 +99,7 @@ select, select option {
 .selected {
   text-transform: capitalize;
 }
+
+table th, table td {
+  padding: 0 1rem;
+}
