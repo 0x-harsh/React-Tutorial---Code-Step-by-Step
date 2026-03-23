@@ -82,3 +82,20 @@ input, button {
   color: white;
   background-color: transparent;
 }
+
+select, select option {
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.selectcity {
+  padding: 0.5rem 1rem;
+  border: 1px solid #888;
+  width: fit-content;
+}
+
+.selected {
+  text-transform: capitalize;
+}
