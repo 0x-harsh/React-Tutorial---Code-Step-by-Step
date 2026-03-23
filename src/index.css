@@ -37,6 +37,10 @@ button {
   width: fit-content;
 }
 
+button:active {
+  scale: 0.95;
+}
+
 .numCont {
   display: flex;
   gap: 0.5rem;
@@ -53,4 +57,35 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  border: 1px solid #888;
+  max-width: 300px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: transparent;
 }
