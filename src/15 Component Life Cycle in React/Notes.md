@@ -3,9 +3,11 @@
 
 ## Life cycle in Human
 `Birth` => `Growth` => `Expire`
+- [Human Life Cycle Diagaram](../assets/HumanLifeCycle.jpg)
 
 ## Life cycle in ReactJS (React Life Cycle Methods)
 Mounting => Updating => Unmounting
+- [React Life Cycle Diagaram](../assets/ReactLifeCycle.jpg)
 
 - `Mounting` : Creation of element
 - `Updating` : Change in element
