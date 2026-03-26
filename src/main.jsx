@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './32 Updating Array in State/App.jsx'
+import App from './33 useActionState Hook/App.jsx'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
