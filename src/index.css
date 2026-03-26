@@ -71,17 +71,17 @@ button:active {
 .gap {
   gap: 1rem;
 }
-/* 
+
 input, button {
-  outline: none;
-  border: none;
+  /* outline: none;
+  border: none; */
   border: 1px solid #888;
   max-width: 300px;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  color: white;
-  background-color: transparent;
-} */
+  /* color: white;
+  background-color: transparent; */
+}
 
 select, select option {
   background-color: transparent;
