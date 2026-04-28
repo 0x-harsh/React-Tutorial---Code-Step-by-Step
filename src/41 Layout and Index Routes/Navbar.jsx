@@ -11,7 +11,7 @@ const Navbar = () => {
                     <Link to="/college" >College</Link>
                 </div>
             </div>
-            <Outlet />
+            <Outlet /> {/* displays child routes data */}
         </div>
     )
 }
