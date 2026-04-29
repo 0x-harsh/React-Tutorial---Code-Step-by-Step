@@ -149,3 +149,14 @@ li {
 a {
   color: white
 }
+
+.active {
+  font-weight: bold;
+  background-color: #222;
+}
+
+.custom-active {
+  font-weight: bold;
+  background-color: #222;
+  color: orangered;
+}
