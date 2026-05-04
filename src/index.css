@@ -175,3 +175,16 @@ a {
   flex-wrap: wrap;
   gap: 0.75rem;
 }
+
+.userListItemHeader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 600;
+}
+
+.userListItem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
