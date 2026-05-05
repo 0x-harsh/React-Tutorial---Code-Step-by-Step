@@ -1,9 +1,9 @@
 {
   "users": [
     {
-      "name": "Harsh",
-      "age": 21,
-      "email": "harsh@email.com",
+      "name": "Harsh Developer",
+      "email": "harsh.dev@email.com",
+      "age": "20",
       "id": "PNzLSu8uI_0"
     },
     {
@@ -13,9 +13,9 @@
       "id": "C8GzGvTZT20"
     },
     {
-      "name": "Elliot",
+      "name": "Eng. Elliot",
+      "email": "elliot@mrrobot.com",
       "age": "24",
-      "email": "elliot@robot.com",
       "id": "krbTRiKIJpo"
     }
   ],

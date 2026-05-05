@@ -225,6 +225,15 @@ button {
   font-weight: 600;
 }
 
-.delete {
+.btn .delete {
   padding: 6px 12px;
+}
+
+.update {
+  background-color: green;
+}
+
+.actionbuttons {
+  display: flex;
+  gap: 4px;
 }

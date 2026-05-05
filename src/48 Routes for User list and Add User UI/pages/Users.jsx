@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router"
+import { Link, Navigate, useNavigate } from "react-router"
 
 const Users = () => {
     const [usersData, setUsersData] = useState()
     const [loading, setLoading] = useState()
+    const navigate = useNavigate()
 
     useEffect(() => {
         setLoading(true)
@@ -29,6 +30,10 @@ const Users = () => {
             getData()
         }
     }
+
+    const updateUser = async (userId) => {
+        navigate("/update/"+userId)
+    }
     return (
         <div>
             <h1>USERS LIST</h1>
@@ -47,8 +52,9 @@ const Users = () => {
                                     <span>{user.name}</span>
                                     <span>{user.age}</span>
                                     <span>{user.email}</span>
-                                    <span>
-                                        <button onClick={() => { deleteUser(user.id) }} className="delete">Delete</button>
+                                    <span className="actionbuttons">
+                                        <button onClick={() => { deleteUser(user.id) }} className="btn delete">Delete</button>
+                                        <button onClick={() => { updateUser(user.id) }} className="btn update">Update</button>
                                     </span>
                                 </li>
                             )
