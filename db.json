@@ -1,24 +1,41 @@
 {
-    "users": [
-        {
-            "name": "Anil",
-            "age": 29,
-            "email": "anil@email.com"
-        },
-        {
-            "name": "Chakshu",
-            "age": 23,
-            "email": "chakshu@email.com"
-        },
-        {
-            "name": "Harsh",
-            "age": 21,
-            "email": "harsh@email.com"
-        },
-        {
-            "name": "Amit",
-            "age": 22,
-            "email": "amit@email.com"
-        }
-    ]
+  "users": [
+    {
+      "name": "Anil",
+      "age": 29,
+      "email": "anil@email.com",
+      "id": "9bNil_lc7ZY"
+    },
+    {
+      "name": "Chakshu",
+      "age": 23,
+      "email": "chakshu@email.com",
+      "id": "NgkjOYeFg00"
+    },
+    {
+      "name": "Harsh",
+      "age": 21,
+      "email": "harsh@email.com",
+      "id": "PNzLSu8uI_0"
+    },
+    {
+      "name": "Amit",
+      "age": 22,
+      "email": "amit@email.com",
+      "id": "enooHR0y4oI"
+    },
+    {
+      "name": "Harsh Dhiman",
+      "age": "19",
+      "email": "harshdhiman@mail.com",
+      "id": "C8GzGvTZT20"
+    },
+    {
+      "name": "Elliot",
+      "age": "24",
+      "email": "elliot@robot.com",
+      "id": "krbTRiKIJpo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

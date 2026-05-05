@@ -19,7 +19,8 @@ body {
   padding: 0.5rem;
 }
 
-#fruitName, #btn {
+#fruitName,
+#btn {
   border: 1px solid #888;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
@@ -63,6 +64,7 @@ button:active {
 .justify-center {
   justify-content: center;
 }
+
 .justify-between {
   justify-content: space-between;
 }
@@ -79,7 +81,8 @@ button:active {
   gap: 1rem;
 }
 
-input, button {
+input,
+button {
   /* outline: none;
   border: none; */
   border: 1px solid #888;
@@ -90,14 +93,16 @@ input, button {
   background-color: transparent; */
 }
 
-select, select option {
+select,
+select option {
   background-color: transparent;
   color: white;
   border: none;
   outline: none;
 }
 
-.selectcity, .selectCont {
+.selectcity,
+.selectCont {
   padding: 0.25rem 0.5rem;
   border: 1px solid #888;
   width: fit-content;
@@ -108,7 +113,8 @@ select, select option {
   text-transform: capitalize;
 }
 
-table th, table td {
+table th,
+table td {
   padding: 0 1rem;
 }
 
@@ -121,7 +127,7 @@ table th, table td {
   width: fit-content;
 }
 
-select > option {
+select>option {
   background-color: #111;
   color: white;
 }
@@ -176,15 +182,44 @@ a {
   gap: 0.75rem;
 }
 
-.userListItemHeader {
+.userLIstItemHeader {
   display: flex;
-  justify-content: space-evenly;
+  gap: 4rem;
   align-items: center;
   font-weight: 600;
 }
 
 .userListItem {
   display: flex;
-  justify-content: space-evenly;
+  gap: 4rem;
   align-items: center;
+  border-top: 1px solid gray;
+}
+
+span {
+  text-align: start;
+  width: 10rem;
+}
+
+.userListItemCont {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+input, button {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+
+button {
+  background-color: blueviolet;
+  color: #fff;
+  font-weight: 600;
 }

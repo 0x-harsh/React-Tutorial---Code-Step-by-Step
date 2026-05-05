@@ -3,6 +3,7 @@ import { Link } from "react-router"
 
 const Users = () => {
     const [usersData, setUsersData] = useState()
+    const [loading, setLoading] = useState()
 
     useEffect(() => {
         setLoading(true)
@@ -19,17 +20,23 @@ const Users = () => {
     return (
         <div>
             <h1>USERS LIST</h1>
-            <ul className="userListItemHeader">
+            <ul className="userListItemCont">
+                <div className="userLIstItemHeader">
+                    <span>Name</span>
+                    <span>Age</span>
+                    <span>Email</span>
+                </div>
                 {
-                    usersData && usersData.map((user)=>{
-                        return (
-                            <li className="userListItem">
-                                <span>{user.name}</span>
-                                <span>{user.age}</span>
-                                <span>{user.email}</span>
-                            </li>
-                        )
-                    })
+                    loading ? <div>Loading...</div> :
+                        usersData && usersData.map((user) => {
+                            return (
+                                <li className="userListItem">
+                                    <span>{user.name}</span>
+                                    <span>{user.age}</span>
+                                    <span>{user.email}</span>
+                                </li>
+                            )
+                        })
                 }
             </ul>
             <div>
