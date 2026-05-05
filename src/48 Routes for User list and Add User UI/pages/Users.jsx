@@ -10,12 +10,24 @@ const Users = () => {
         getData()
     }, [])
 
+    const url = 'http://localhost:3000/users'
+
     async function getData() {
-        const url = 'http://localhost:3000/users'
         let response = await fetch(url) // get request by default
         let data = await response.json()
         setUsersData(data)
         setLoading(false)
+    }
+
+    const deleteUser = async (userId) => {
+        const response = await fetch(url+"/"+userId, {
+            method: 'DELETE'
+        })
+        let data = await response.json()
+        if(data) {
+            alert("record deleted!")
+            getData()
+        }
     }
     return (
         <div>
@@ -25,15 +37,19 @@ const Users = () => {
                     <span>Name</span>
                     <span>Age</span>
                     <span>Email</span>
+                    <span>Action</span>
                 </div>
                 {
                     loading ? <div>Loading...</div> :
                         usersData && usersData.map((user) => {
                             return (
-                                <li className="userListItem">
+                                <li className="userListItem" key={user.id}>
                                     <span>{user.name}</span>
                                     <span>{user.age}</span>
                                     <span>{user.email}</span>
+                                    <span>
+                                        <button onClick={() => { deleteUser(user.id) }} className="delete">Delete</button>
+                                    </span>
                                 </li>
                             )
                         })
