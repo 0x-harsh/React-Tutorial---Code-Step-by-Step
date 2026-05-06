@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './50 Validation with useActionState in React/App.jsx'
+import App from './51 useReducer Hook in ReactJS/App.jsx'
 import { BrowserRouter } from 'react-router'
 
 createRoot(document.getElementById('root')).render(
