@@ -237,3 +237,17 @@ button {
   display: flex;
   gap: 4px;
 }
+
+.err {
+  color: red;
+}
+
+.redbox {
+  outline-color: red;
+  border: 1px solid red;
+}
+
+.redbox:focus {
+  outline-color: red;
+  border: 1px solid red;
+}
