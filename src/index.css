@@ -251,3 +251,7 @@ button {
   outline-color: red;
   border: 1px solid red;
 }
+
+.green {
+  color: green;
+}
